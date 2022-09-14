@@ -1,0 +1,133 @@
+/* ====================== ШРИФТИ =============================== */
+
+/* Підключаємо шрифт Roboto з google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Підключаємо шрифт Larsseit з макету ThriveTalk */
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit.woff2") format("woff2"), 
+	url("../fonts/Larsseit/Larsseit.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit-Medium.woff2") format("woff2"), 
+	url("../fonts/Larsseit/Larsseit-Medium.wof") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Larsseit";
+	src: url("../fonts/Larsseit/Larsseit-Bold.woff2") format("woff2"), 
+	url("../fonts/Larsseit/Larsseit-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Підключаємо шрифт Lato з макету OnlineCourse */
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato/Lato-Regular.woff2") format("woff2"), 
+	url("../fonts/Lato/Lato-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato/Lato-Bold.woff2") format("woff2"), 
+	url("../fonts/Lato/Lato-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato";
+	src: url("../fonts/Lato/Lato-Black.woff2") format("woff2"), 
+	url("../fonts/Lato/Lato-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* ====================== CCS Властивості =============================== */
+/* Шукаємо (робимо запит) до всіх об'єктів */
+* {
+	font-family: "Lato";
+	color: black;
+ }
+ /* Шукаємо (робимо запит) по назві тегу */
+ div {
+	font-family: "Larsseit";
+ }
+ /* Усі DIV з класом header */
+ div.header {
+	font-family: "Roboto";
+	color: white;
+ }
+ /* Звертаємось/описуємо до усіх тегів A на сторінці */
+ a {
+	font-family: "Roboto";
+	color: goldenrod;
+ }
+ /* Шукаємо (робимо запит по назві ID) */
+ #biography {
+	font-family: "Larsseit";
+	color: red;
+ }
+ /* Шукаємо (робимо запит по назві класу) */
+ .childhood {
+	font-family: "Roboto";
+	color: darkblue;
+ }
+ /* Усі теги h2 першого рівня (безпосередні) в середені об'єктів 
+ з класом main-results */
+ .main-results > h2 {
+	font-family: "Roboto";
+	color: green;
+ }
+ /* Звертаємось відразу до об'єктів з класом olympic-games та
+	 до об'єктів з класом world
+  */
+ .olympic-games,
+ .world {
+	font-family: "Roboto";
+	color: blue;
+ }
+ /* Усі теги P в середені об'єктів з класом main-recognition */
+ .main-recognition p {
+	font-family: "Larsseit";
+	color: aqua;
+ }
+ /* Усі об'єкти з класом list-item в середені об'єктів з класом urope-list */
+ .europe-list .list-item {
+	font-family: "Roboto";
+	color: limegreen;
+ }
+ /* Усі теги з класами list-item та other одночасно */
+ .list-item.other {
+	font-family: "Roboto";
+	color: red;
+ }
+ /* Тег li який знаходяться беспосередньо далі по коду після 
+ об'єктів з класом list-item-world та мають той самий рівень вкладеності */
+ .list-item-world + li {
+	font-family: "Roboto";
+	color: blue;
+ }
+ /* Усі об'єкти с класом club-item які знаходяться далі по коду після об'єктів 
+ з класом club-list та мають той самий рівень вкладеності */
+ .club-list ~ .club-item {
+	font-family: "Roboto";
+	color: darkorchid;
+ }
+ /* Усі об'єкти в середені об'єктів з класом footer */
+ .footer * {
+	font-family: "Roboto";
+	color: yellow;
+ }
